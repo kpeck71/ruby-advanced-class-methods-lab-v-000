@@ -43,7 +43,7 @@ class Song
     if find_by_name(name) == nil #is this the wrong part?
       create_by_name(name)
     else
-      puts song
+      song
     end
   end
 
