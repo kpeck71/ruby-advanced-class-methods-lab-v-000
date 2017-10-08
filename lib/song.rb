@@ -42,7 +42,7 @@ class Song
     song = self.new
     if find_by_name(name) == nil #is this the wrong part?
       create_by_name(name)
-    else
+    else find_by_name(name).include?(name)
       song
     end
   end
