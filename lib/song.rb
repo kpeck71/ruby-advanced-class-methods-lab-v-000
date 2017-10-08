@@ -59,13 +59,6 @@ class Song
 
   def Song.create_from_filename(filename)
     new_from_filename(filename).save
-    # file = filename.split(" - ") #["Thundercat ", " For Love I Come.mp3"]
-    # artist_name = file[0]
-    # name = file[1].chomp(".mp3")
-    # song2 = Song.new
-    # song2.name = name
-    # song2.artist_name = artist_name
-    # song2.save
   end
 
   def self.destroy_all
