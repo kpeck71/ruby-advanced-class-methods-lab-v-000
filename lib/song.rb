@@ -40,7 +40,7 @@ class Song
 
   def Song.find_or_create_by_name(name)
     song = self.new
-    if find_by_name(name) == nil #is this the wrong part?
+    if find_by_name(name) == false #is this the wrong part?
       create_by_name(name)
     else
       puts song
