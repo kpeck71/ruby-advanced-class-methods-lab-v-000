@@ -39,7 +39,7 @@ class Song
   end
 
   def Song.find_or_create_by_name(name)
-    create_by_name(name).unless find_by_name(name) == true
+    find_by_name(name)
     # if find_by_name(name) == nil #is this the wrong part?
     #   create_by_name(name)
     # else
