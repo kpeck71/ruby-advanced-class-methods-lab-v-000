@@ -40,17 +40,17 @@ class Song
 
   def Song.find_or_create_by_name(name)
     song = self.new
-    
-    
+    binding.pry
+
     # if find_by_name(name) == nil #is this the wrong part?
     #   create_by_name(name)
-    # else 
+    # else
     #   song
     # end
   end
 
 
-  
+
 
   def Song.alphabetical
     @@songs.sort_by{|song| song.name}
