@@ -58,7 +58,7 @@ class Song
   end
 
   def Song.create_from_filename(filename)
-    new_from_filename.save
+    new_from_filename(filename).save
     # file = filename.split(" - ") #["Thundercat ", " For Love I Come.mp3"]
     # artist_name = file[0]
     # name = file[1].chomp(".mp3")
