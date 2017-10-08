@@ -38,8 +38,7 @@ class Song
     @@songs.detect{|song| song.name == name}
   end
 
-  def Song.find_or_create_by_name("Hello")
-    #song = self.new
+  def Song.find_or_create_by_name(name)
 
     if find_by_name(name) == nil #is this the wrong part?
       create_by_name(name)
